@@ -1,0 +1,64 @@
+.sidebar-wrapper {
+    background-image: linear-gradient(to bottom, #0d1921, #142734);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97%;
+    align-items: center;
+    border-top: 2px solid teal;
+    border-right: 2px solid teal;
+    border-bottom: 2px solid teal;
+    margin-top: 1vh;
+    border-radius: 0 10px 10px 0;
+
+    .company-logo img {
+        width: 5vw;
+        padding-top: 2vh;
+    }
+
+    .actions-wrapper {
+        height: 45vh;
+        border-radius: 20px;
+        background-color: rgb(27, 52, 69);
+        width: 7vw;
+        margin-left: 3.8vw;
+        border-top: 2px solid teal;
+        border-left: 2px solid teal;
+        border-bottom: 2px solid teal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2vh 0;
+        // clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 85%);
+
+        button {
+            border: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background: none;
+            align-items: center;
+            justify-content: space-between;
+            height: 4vh;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 600;
+                font-size: 15px;
+                color: wheat;
+            }
+        }
+    }
+    .leave-call {
+        background-color: red;
+        color: white;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 2vh;
+        height: 3vh;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(255, 0, 0, 0.5);
+        }
+    }
+}

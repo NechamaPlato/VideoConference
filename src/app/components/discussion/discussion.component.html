@@ -1,0 +1,20 @@
+<div class="discussion-wrapper">
+    <div class="side-bar">
+        <discussion-sidebar></discussion-sidebar>
+    </div>
+    <div class="conference-screen">
+        <header class="discussion-header">
+            <div class="discussion-details">
+            <div>{{discussionData.company}}, {{discussionData.committee}} - {{discussionData.subject}}</div>
+            <div>File number {{discussionData.fileNumber}}</div>
+        </div>
+        <div>
+            <button class="full-screen" (click)="goToFullScreen()">
+                <i class="fas fa-expand-alt"></i>
+            </button>
+            <span *ngIf="isRecording"><span class="red-point"></span>recording</span>
+        </div>
+        </header>
+        <conference-screen [participants]="discussionData.participants"></conference-screen>
+    </div>
+</div>

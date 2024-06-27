@@ -1,0 +1,14 @@
+<div class="user-screen-wrapper">
+    <div class="user-tag" [ngClass]="{'mine-tag':isMeUser(user.id)}">
+        <span *ngIf="user.isJudge">speaker</span>
+        <span *ngIf="isMeUser(user.id)">me - </span>
+        <span *ngIf="!user.isJudge">answer</span>
+    </div>
+    <div class="user-details-wrapper">
+        <div>
+            <div *ngIf="user.isJudge" class="discussion-subject">{{discussionData.subject}}</div>
+            <span *ngIf="user.isJudge">Judge </span><span>{{user.name}}</span>
+        </div>
+        <i class="fas" [ngClass]="{'fa-microphone-slash':!user.isMicOn,'fa-microphone':user.isMicOn}"></i>
+    </div>
+</div>

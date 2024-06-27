@@ -1,0 +1,42 @@
+.discussion-wrapper {
+    background-color: rgb(19, 37, 49);
+    height: 100vh;
+    color: white;
+    display: flex;
+    font-size: 20px;
+}
+
+.side-bar {
+    width: 13vw;
+    height: 100%;
+}
+
+.conference-screen {
+    padding: 2vw;
+    width: 100%;
+}
+
+.discussion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .red-point {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .full-screen {
+        margin-right: 1vw;
+        background: none;
+        border: none;
+        color: white;
+        &:hover {
+            color: rgb(129, 134, 138);
+            font-size: 16px;
+        }
+    }
+}

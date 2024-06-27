@@ -1,0 +1,43 @@
+.conference-screen-wrapper{
+    padding: 1% 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(26, 43, 55);
+    height: 90%;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .judges-screens, .sides-screens {
+        display: flex;
+        justify-content: space-around;
+    }
+    .judges-screens {
+        height: 50%;
+    }
+    .sides-screens {
+        height: 40%;
+    }
+    .call-footer {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 1vw;
+            height: 4vh;
+            width: 6vw;
+            border-radius: 20px;
+            background-color: rgb(27, 52, 69);
+            border: none;
+            color: wheat;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(54, 75, 90);
+            }
+        }
+    }
+    .fa-sign-out-alt {
+        rotate: 270deg;
+    }
+}

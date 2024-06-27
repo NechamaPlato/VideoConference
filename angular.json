@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "VCtest"
+    }
+  },
+  "defaultProject": "VCtest",
+  "cli": {
+    "analytics": "296314f0-181a-4aa4-a410-ce0b5eb8fb4a"
+  }
 }
