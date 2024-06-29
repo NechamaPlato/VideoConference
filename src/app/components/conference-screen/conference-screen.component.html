@@ -1,24 +1,32 @@
 <div class="conference-screen-wrapper">
     <div class="judges-screens">
-        <user-screen [user]="p" *ngFor="let p of judgesParticipants" [ngStyle]="{'width.%': 90/judgesParticipants.length}">
+        <user-screen [user]="p" *ngFor="let p of judgesParticipants"
+            [ngStyle]="{'width.%': 90/judgesParticipants.length}">
         </user-screen>
     </div>
     <div class="sides-screens">
-        <user-screen [user]="p" *ngFor="let p of sidesParticipants" [ngStyle]="{'width.%': 90/sidesParticipants.length}">
+        <user-screen [user]="p" *ngFor="let p of sidesParticipants"
+            [ngStyle]="{'width.%': 90/sidesParticipants.length}">
         </user-screen>
     </div>
     <div class="call-footer">
-        <button (click)="turnCamera()">
-            camera
-            <i class="fas" [ngClass]="{'fa-video':isCameraOn, 'fa-video-slash':!isCameraOn}"></i>
-        </button>
-        <button (click)="turnMic()">
-            microphone
-            <i class="fas" [ngClass]="{'fa-microphone':isMicOn, 'fa-microphone-slash':!isMicOn}"></i>
-        </button>
-        <button (click)="shareScreen()">
-            share screen
-            <i class="fas fa-sign-out-alt"></i>
-        </button>
+        <div class="btns-wrapper">
+            <button (click)="turnCamera()">
+                camera
+                <i class="fas" [ngClass]="{'fa-video':isCameraOn, 'fa-video-slash':!isCameraOn}"></i>
+            </button>
+            <button (click)="turnMic()">
+                microphone
+                <i class="fas" [ngClass]="{'fa-microphone':isMicOn, 'fa-microphone-slash':!isMicOn}"></i>
+            </button>
+            <button (click)="shareScreen()">
+                share screen
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </div>
+        <div class="time-wrapper">
+            <span class="live-tag">LIVE</span>
+            <span>{{meetingDuration}}</span>
+        </div>
     </div>
 </div>

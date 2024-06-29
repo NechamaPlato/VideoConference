@@ -6,9 +6,6 @@ import { Discussion } from '../classes/discussion';
 })
 export class DiscussionService {
   public static currentDiscussion: Discussion;
-  // public static setCurrentDiscussion(discussion: Discussion): void {
-  //   this.currentDiscussion = discussion;
-  // }
 
   constructor() { }
 }

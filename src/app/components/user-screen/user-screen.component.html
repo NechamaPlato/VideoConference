@@ -2,7 +2,8 @@
     <div class="user-tag" [ngClass]="{'mine-tag':isMeUser(user.id)}">
         <span *ngIf="user.isJudge">speaker</span>
         <span *ngIf="isMeUser(user.id)">me - </span>
-        <span *ngIf="!user.isJudge">answer</span>
+        <span *ngIf="!user.isJudge&&user.isAnswer">answer</span>
+        <span *ngIf="!user.isJudge&&!user.isAnswer">appeal</span>
     </div>
     <div class="user-details-wrapper">
         <div>

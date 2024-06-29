@@ -18,7 +18,7 @@ export class UserScreenComponent implements OnInit {
   }
   getMineUser():Participant{
     //return the current user
-    return new Participant(2, 'Jacob', false, false, true);
+    return new Participant(2, 'Jacob', false, true, false, true);
   }
 
   isMeUser(id:number):boolean {
